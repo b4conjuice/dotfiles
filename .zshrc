@@ -138,7 +138,14 @@ function gc() {
 function gch() {
   git checkout "$@";
 }
-alias gd='git diff -- . ":(exclude)package-lock.json"'
+function gd() {
+ if [[ -z $@ ]]
+ then
+  git diff -- . ":(exclude)package-lock.json";
+ else
+  git diff "$@"
+ fi
+}
 alias gl='git log'
 alias gr='git remote -v'
 alias gs='git status'
