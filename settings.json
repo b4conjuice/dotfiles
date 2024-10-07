@@ -1,30 +1,74 @@
 {
-  "window.zoomLevel": 0,
+  // Better Defaults
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  // "window.nativeFullScreen": false, // for some reason breaks custom title bar color
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "single",
+  "editor.minimap.enabled": false,
+
+  // Silence The Noise
+  "breadcrumbs.enabled": false,
+  "scm.diffDecorations": "none",
+  // "editor.hover.enabled": false,
+  // "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none", //newUntitledFile",
+  "editor.lightbulb.enabled": "off",
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  // "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  // Typography
+  "editor.fontSize": 14, // 16
+  "editor.lineHeight": 18, // 45,
+  "editor.suggestFontSize": 14,
+  "editor.suggestLineHeight": 28,
+  "terminal.integrated.fontSize": 14, // 15
+  "terminal.integrated.lineHeight": 1.25,
   "editor.fontFamily": "'Dank Mono', 'Fira Code'",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 18,
+
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
   "editor.letterSpacing": 0.5,
   "workbench.editor.tabSizing": "shrink",
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
-  "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
   "editor.wordWrap": "on",
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.fontWeight": "400",
   "editor.cursorBlinking": "solid",
-  "editor.colorDecorators": false,
-  "editor.minimap.enabled": false,
-  "vscode_custom_css.imports": [
-    "/Volumes/Macintosh HD/Users/daniel/.vscodestyles.css"
-  ],
-  "workbench.activityBar.visible": false,
-  "workbench.sideBar.location": "left",
   "editor.renderWhitespace": "none",
   "editor.rulers": [80, 100, 120],
-  "workbench.startupEditor": "newUntitledFile",
   "extensions.ignoreRecommendations": false,
   "files.exclude": {
     "**/.git": true,
@@ -33,7 +77,7 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/node_modules": true,
-    "**/dist": true,
+    // "**/dist": true,
     "**/build": true,
     "**/.cache": true,
     "**/.next": true,
@@ -49,19 +93,13 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
-  "editor.snippetSuggestions": "top",
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
     "strings": true
   },
-  "workbench.editor.enablePreviewFromQuickOpen": false,
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-  "sublimeTextKeymap.promptV3Features": true,
   "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
   "eslint.alwaysShowStatus": true,
   "search.exclude": {
     "**/node_modules": true,
@@ -69,7 +107,6 @@
     "**/**/*.min.*": true
   },
   "window.titleBarStyle": "custom",
-  "workbench.editor.enablePreview": false,
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
   "workbench.settings.editor": "json",
@@ -82,28 +119,77 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": [
-          "comment",
-          "entity.other.attribute-name"
-          // "keyword",
-        ],
+        "scope": ["comment", "entity.other.attribute-name"],
         "settings": {
           "fontStyle": "italic"
         }
       }
     ]
   },
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontFamily": "Inconsolata for Powerline",
-  "explorer.openEditors.visible": 0,
-  "terminal.integrated.rendererType": "dom",
+  "explorer.openEditors.visible": 1,
   "javascript.suggest.completeFunctionCalls": true,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.colorTheme": "Cobalt2",
   "terminal.integrated.tabs.enabled": false,
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Cobalt2",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.tree.indent": 40,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "svelte.enable-ts-plugin": true,
+  "workbench.editor.labelFormat": "short",
+  // "terminal.external.osxExec": "Hyper.app",
+  "terminal.external.osxExec": "Warp.app",
+  "macros": {
+    "showTerminal": [
+      "workbench.action.terminal.toggleTerminal",
+      "workbench.action.terminal.focus",
+      "workbench.action.toggleMaximizedPanel"
+    ],
+    "hideTerminal": [
+      "workbench.action.toggleMaximizedPanel",
+      "workbench.action.terminal.toggleTerminal"
+    ],
+    "toggleTerminalAndSideBar": [
+      "workbench.action.terminal.toggleTerminal",
+      "workbench.action.closeSidebar"
+    ]
+  },
+  "workbench.activityBar.location": "hidden",
+  // "window.titleBarStyle": "native",
+  // "apc.electron": {
+  //   "titleBarStyle": "hiddenInset",
+  //   "trafficLightPosition": {
+  //     "x": 17,
+  //     "y": 12
+  //   },
+  //   // This gets rid of that horid white frame around the electron window...
+  //   "transparent": true,
+  //   // This removes the less-horid, but still yucky stacking window shadow...
+  //   "hasShadow": false
+  // },
+  "apc.stylesheet": {
+    // This overrides the VS Code logo with your own SVG...
+    ".monaco-workbench.vs-dark .part.editor>.content .editor-group-container .editor-group-watermark>.letterpress": {
+      // "background-image": "url(/Users/daniel/Pictures/dev/vscode_bg_icon.svg)",
+      "background-image": "url(/Users/daniel/Pictures/dev/vercel-mark.svg)",
+      "opacity": "0.45"
+    }
+  },
+  "workbench.editor.tabActionCloseVisibility": false,
+  "update.mode": "manual",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "workbench.editor.customLabels.enabled": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} - Page",
+    "**/app/**/layout.tsx": "${dirname} - Layout",
+    "**/app/**/route.ts": "${dirname} - Route"
+  }
 }
