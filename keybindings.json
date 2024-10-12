@@ -128,7 +128,7 @@
     "key": "ctrl+shift+`",
     "command": "-workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  }
+  },
 
   // Line Manipulation
   {
