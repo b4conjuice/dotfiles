@@ -22,6 +22,10 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
+    "key": "cmd+k cmd+v",
+    "command": "vercel-deployments.focus"
+  },
+  {
     "key": "cmd+e",
     "command": "workbench.action.focusActiveEditorGroup"
   },
